@@ -12,20 +12,26 @@
     <main>
         <hr>
         <form>
+            <!--Input de tipo text con atributos-->
             <label for="nombres">Nombres y Apellidos</label>
-            <input type="text" id="nombres" placeholder="Ej. Juan Perez">
+            <input type="text" id="nombres" placeholder="Ej. Juan Perez" 
+            required minlength="2" maxlength="10">
             <br/>
+            <!--Input de tipo number con atributos-->
             <label for="edad">Edad</label>
-            <input type="number" id="edad">
+            <input type="number" id="edad" min="17" max="100">
             <br/>
+            <!--Input de tipo email con atributos-->
             <label for="correo">Correo Electronico</label>
             <input type="email" id="correo">
             <br/>
+            <!--Input de tipo password con atributos-->
             <label for="contraseña">Contraseña</label>
             <input type="password" id="contraseña">
             <br/>
             <label>Estado Civil</label>
             <br/>
+            <!--Input de tipo radio (option button) con atributos-->
             <input type="radio" id="casado" name="estadocivil" value="casado">
             <label for="casado">Casado/a</label>
             <br/>
@@ -36,6 +42,7 @@
             <label for="soltero">Soltero/a</label>
             <br/>
             <label>Ciudad</label>
+            <!--Input de tipo select/option (Validacion de datos) con atributos-->
             <select>
                 <option selected disabled>
                     Seleccione una opción
@@ -43,7 +50,66 @@
                 <option value="ARE">Arequipa</option>
                 <option value="TRU">Trujillo</option>
             </select>
+            <br/>
+            <input type="submit" value="Enviar">
         </form>
+        <!--Tablas// Conformado por filas (TR) - celdas (TD) // 
+            Definir cabecera (THEAD) - celda de cabeceras (TH) -->
+        <table border="1">
+            <tr>
+                <td>Celda1</td>
+                <td>Celda2</td>
+            </tr>
+        </table>
+        <!--Se usa tablas para estructurar informacion-->
+        <table>
+            <thead>
+                <tr>
+                <th>Celda de header 1</th>
+                <th>Celda de header 2</th>
+                <th>Celda de header 3</th>
+                <th>Celda de header 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Celda de body 1</td>
+                    <td>Celda de body 2</td>
+                    <td>Celda de body 3</td>
+                    <td>Celda de body 4</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Celda de footer 1</td>
+                    <td>Celda de footer 2</td>
+                    <td>Celda de footer 3</td>
+                    <td>Celda de footer 4</td>
+                </tr>
+                </tfoot>
+        </table>
+<!--Se puede estructurar las tablas directamente con TR y TD de no ser necesarias
+las partes del header/body/footer-->
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </table>
     </main>
 </body>
 </html>

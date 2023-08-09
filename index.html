@@ -3,46 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera pagina web</title>
+    <title>Document</title>
 </head>
 <body>
-  <header>
-    <a href="">
-        logo
-    </a>
-  <nav>
-    <li><a href="">Sobre mi</a></li>
-    <li><a href=""></a>Portafolio</li>
-    <li><a href=""></a>Servicios</li>
-    <li><a href=""></a>Contactos</li>
-  </nav>
-  </header>
-  <main>
-<h1>Titulo principal</h1>
-<section>
-    <h2>Sobre mi</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab delectus sapiente quas necessitatibus dolorem itaque aperiam repellendus similique illo, debitis dolore, iste iusto. Velit aperiam totam odit quos id voluptatibus?</p>
-    </section>
-    <section>
-    <h2>Portafolio</h2>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, aut, ducimus ipsum quibusdam cupiditate magni, nisi est eveniet tempore qui praesentium ea facere expedita excepturi illum ipsa commodi accusantium quia!</p>
-</section>
-<section>
-    <h2>Servicios</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam unde, quidem totam tempore adipisci minima facere, magni debitis error esse molestias eos repellat quas illum neque cumque eum corporis veritatis.</p>
-
-</section>
-<section>
-    <h2>Contacto</h2>
-    <form action="">
-<input type="text" placeholder="Nombre">
-<input type="text" placeholder="Apellido">
-<input type="text" placeholder="Correo">
-<input type="text" placeholder="Telefono">
-<button>Enviar</button>
-<button type="reset">Limipiar</button>
-    </form>
-</section>
-  </main>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+    <main>
+        <hr>
+        <form>
+            <label for="nombres">Nombres y Apellidos</label>
+            <input type="text" id="nombres" placeholder="Ej. Juan Perez">
+            <br/>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad">
+            <br/>
+            <label for="correo">Correo Electronico</label>
+            <input type="email" id="correo">
+            <br/>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña">
+            <br/>
+            <label>Estado Civil</label>
+            <br/>
+            <input type="radio" id="casado" name="estadocivil" value="casado">
+            <label for="casado">Casado/a</label>
+            <br/>
+            <input type="radio" id="conviviente" name="estadocivil" value="conviviente">
+            <label for="conviviente">Conviviente</label>
+            <br/>
+            <input type="radio" id="soltero" name="estadocivil" value="soltero">
+            <label for="soltero">Soltero/a</label>
+            <br/>
+            <label>Ciudad</label>
+            <select>
+                <option selected disabled>
+                    Seleccione una opción
+                <option value="LIM">Lima</option>
+                <option value="ARE">Arequipa</option>
+                <option value="TRU">Trujillo</option>
+            </select>
+        </form>
+    </main>
 </body>
 </html>

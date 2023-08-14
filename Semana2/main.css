@@ -1,0 +1,49 @@
+h1{
+    color: pink;
+}
+
+h2{
+    font-weight: bold;
+    color: brown;
+}
+
+.subtitulo{
+    color: blue;
+}
+#Titulo2{
+    color: wheat;
+}
+
+[href]{
+    color: red
+}
+
+[href="https://google.com"]{
+    color: orange;
+}
+
+[href="https://facebook.com"]{
+    color: blue;
+}
+
+input[disabled]{
+    background-color:grey
+}
+
+a{text-decoration: none;}
+
+a:hover{ text-decoration:underline;}
+
+input:focus{background-color: red;}
+
+ul li:nth-child(2){
+    color: brown;
+}
+ul li:first-child{
+    color: purple;
+}
+
+ul li:last-child{
+    color: green;
+}
+

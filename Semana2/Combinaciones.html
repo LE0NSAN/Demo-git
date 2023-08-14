@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinaciones</title>
+</head>
+<body>
+    <style>
+        body p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+        span{
+            color:red;
+        }
+
+        p span{
+            font-size: 30px;
+            color: pink;
+        }
+
+       
+    </style>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquid autem, eveniet voluptatum deserunt accusantium laboriosam! Porro sequi deleniti voluptatibus, saepe aliquid, corporis facere autem est explicabo consectetur dignissimos repellendus?
+    </p>
+    <P>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ea labore vero deleniti a laboriosam id minus suscipit quam quis. Nulla officiis fuga praesentium repudiandae voluptate perspiciatis illum numquam odit?
+    </P>
+    <P><SPAN>Hola soy un span</SPAN></P>
+    <span>Span fuera</span>
+
+    <!--Formateo de hijos directos-->
+
+<style>
+    ul>li{
+        border-top: 1px solid red;
+    }
+</style>
+<ul>
+    <li>Unordered item</li>
+    <li>Unordered item
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ol>
+
+    </li>
+</ul>
+
+<!--Formateo a los hermanos adyacentes suma-->
+<style>
+h2+p{
+    background: blue 
+}
+</style>
+
+<h2>Titulo</h2>
+<p>Parrafo</p>
+<h2>Titulo</h2>
+<span>span</span>
+<p>Parrafo</p>
+<h2>Titulo</h2>
+<p>Parrafo</p>
+
+<!--Formateo a los hermanos adyacentes con sibling-->
+<style>
+    h2~p{
+        background: red 
+    }
+    </style>
+    
+    <h2>Titulo</h2>
+    <p>Parrafo</p>
+    <h2>Titulo</h2>
+    <span>span</span>
+    <p>Parrafo</p>
+    <h2>Titulo</h2>
+    <p>Parrafo</p>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    p::first-letter {
+        font-size: 44px;
+    }
+
+    p::after{
+        content: "Agregando After";
+    }
+
+    p::before{
+        content: "Agregando Before";
+    }
+
+    p::first-line{
+        background: green;
+    }
+
+    *::selection{
+        background: pink;
+    }
+</style>
+
+
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid ex dicta maiores, dolorum ratione consequatur quas tempora perspiciatis sunt omnis qui aliquam vel, exercitationem molestias nobis blanditiis sapiente suscipit ut.</p>
+</body>
+</html>
